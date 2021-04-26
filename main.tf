@@ -4,6 +4,16 @@ provider "azurerm" {
   subscription_id = "7eed3e9c-10ee-4527-abae-10d2f7a7cc27"
 }
 
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tf_rg_blobstore"
+    storage_account_name = "tfstorageaccountpanka01l"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"  
+  }
+}
+
 resource "azurerm_resource_group" "tf_test" {
   name     = "tfmainrg"
   location = "Australia East"

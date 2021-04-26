@@ -679,3 +679,5 @@ $RECYCLE.BIN/
 /Youi.CalculationEngine.Api/.devbuild/calculationEngineBuild
 /src/Assemblies/Stratos.Youi.Calc.Assemblies.Perils
 /src/stratos-youi-calc-assemblies/*
+
+.terraform
